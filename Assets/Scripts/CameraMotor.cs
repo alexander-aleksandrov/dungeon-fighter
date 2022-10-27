@@ -3,12 +3,13 @@ using UnityEngine;
 public class CameraMotor : MonoBehaviour
 {
   public Transform lookAt;
-  public float boundX = 0.15f;
-  public float boundY = 0.05f;
+  public float boundX = 0.3f;
+  public float boundY = 0.15f;
 
   private void LateUpdate()
   {
     Vector3 delta = Vector3.zero;
+
     float deltaX = lookAt.position.x - transform.position.x;
     if (deltaX > boundX || deltaX < -boundX)
     {
@@ -22,6 +23,7 @@ public class CameraMotor : MonoBehaviour
       }
 
     }
+
     float deltaY = lookAt.position.y - transform.position.y;
     if (deltaY > boundY || deltaY < -boundY)
     {
