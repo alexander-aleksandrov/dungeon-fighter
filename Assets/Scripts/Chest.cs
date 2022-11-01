@@ -10,7 +10,10 @@ public class Chest : Collectable
     {
       collected = true;
       GetComponent<SpriteRenderer>().sprite = emptyChest;
-      Debug.Log("Granted " + coinsReward + " coins");
+
+      string msg = "+" + coinsReward + " coins";
+      GameManager.instance.ShowText(msg, 25, Color.yellow, transform.position, Vector3.up * 50, 3f);
+      Debug.Log("Granted coins");
       GameManager.instance.coins += coinsReward;
     }
   }
