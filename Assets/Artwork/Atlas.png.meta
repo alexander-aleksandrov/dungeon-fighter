@@ -305,132 +305,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_9
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 240
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2dfffa18ca68e1343af80a5b9d86bb5d
-      internalID: 1319757648
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Atlas_10
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 240
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31e5c679fa78a174e918df48ebbf03f6
-      internalID: 853696144
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Atlas_11
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 240
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 12c08ef0b4c469b46a0e919c229c95b1
-      internalID: -742786358
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Atlas_12
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 240
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bae95d8018707634d9d6a23da559cb76
-      internalID: -1136903915
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Atlas_13
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 240
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fd08976c589b2b441bd641ffca4b32ac
-      internalID: -1271697905
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Atlas_14
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 240
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dbe976e89682d184c81b4c40a993ec0d
-      internalID: -571848810
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Atlas_15
       rect:
         serializedVersion: 2
@@ -746,13 +620,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_30
+      name: weapon_0
       rect:
         serializedVersion: 2
-        x: 144
-        y: 224
-        width: 16
-        height: 16
+        x: 147
+        y: 225
+        width: 10
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -767,13 +641,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_31
+      name: weapon_1
       rect:
         serializedVersion: 2
-        x: 160
-        y: 224
-        width: 16
-        height: 16
+        x: 163
+        y: 225
+        width: 10
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -788,13 +662,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_32
+      name: weapon_3
       rect:
         serializedVersion: 2
-        x: 176
-        y: 224
-        width: 16
-        height: 16
+        x: 179
+        y: 225
+        width: 10
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1266,69 +1140,6 @@ TextureImporter:
       bones: []
       spriteID: bb70adb5a01e8c84ab6646fe9c8b8c27
       internalID: 456386182
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Atlas_55
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 208
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 90bd9985a473d204b9a03a3419edb08d
-      internalID: -1369214183
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Atlas_56
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 208
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a1c8ccd78e700244aa2011aa4a7b367f
-      internalID: 991672412
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Atlas_57
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 208
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 22221df6606f5ad4b97c0b3b02793a78
-      internalID: -1169713013
       vertices: []
       indices: 
       edges: []
@@ -1883,10 +1694,10 @@ TextureImporter:
       name: Atlas_84
       rect:
         serializedVersion: 2
-        x: 160
+        x: 163
         y: 192
-        width: 16
-        height: 16
+        width: 10
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4631,7 +4442,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_215
+      name: enemy_0
       rect:
         serializedVersion: 2
         x: 16
@@ -6589,7 +6400,6 @@ TextureImporter:
       Atlas_260: -994748732
       Atlas_72: 63928664
       Atlas_148: -1628509301
-      Atlas_30: 1999387000
       Atlas_217: -1483700158
       Atlas_261: -666266924
       Atlas_73: 467368531
@@ -6603,26 +6413,29 @@ TextureImporter:
       Atlas_99: 1004628374
       floor_2: 355532593
       Atlas_47: 1248363082
+      enemy_0: 793992575
       Atlas_35: 85697479
       Atlas_219: -497639864
+      wallPipe_: -427669293
       Atlas_89: 254154756
-      Atlas_154: -645973837
       rightWall_1: 789264675
       Atlas_222: -1855292756
       Atlas_304: -1118017034
-      Atlas_307: -1734277268
       Atlas_233: -1865381874
-      Atlas_36: -1808795376
       leftWall_3: 915147788
-      wallPipe_: -427669293
+      Atlas_36: -1808795376
+      weapon_0: 1999387000
       Atlas_254: 1767614272
       Atlas_198: 1006126961
-      Atlas_45: 1751224183
+      Atlas_307: -1734277268
+      Atlas_154: -645973837
       Atlas_225: -1160799557
-      chest_3: -1626405530
+      Atlas_45: 1751224183
       Atlas_106: 247958379
+      chest_3: -1626405530
       Atlas_187: -331036164
       Atlas_192: 1123668534
+      weapon_1: -776868543
       HealingFountain_2: 87047003
       Atlas_210: 128473538
       Atlas_98: 1882620881
@@ -6633,7 +6446,6 @@ TextureImporter:
       Atlas_112: 90972019
       Atlas_267: -41024840
       Atlas_306: 1630823434
-      Atlas_215: 793992575
       Atlas_92: -2118110339
       Atlas_180: 28757921
       stairs_2: 1539403821
@@ -6713,7 +6525,6 @@ TextureImporter:
       Atlas_305: 256854495
       Atlas_28: -17022042
       Atlas_136: 1246424059
-      Atlas_31: -776868543
       Atlas_266: 1969006937
       Atlas_285: 587011610
       Atlas_17: 1886058410
@@ -6764,6 +6575,7 @@ TextureImporter:
       Atlas_216: -2012524308
       Atlas_272: -1367980468
       Atlas_281: 40698941
+      weapon_3: -1528875407
       Atlas_133: -1053518897
       Atlas_82: -803012836
       pillarWall_3: 1326166564
@@ -6772,7 +6584,6 @@ TextureImporter:
       Atlas_86: 18863515
       Atlas_190: 1312841575
       torch_7: 1088432183
-      Atlas_32: -1528875407
       Atlas_182: 487150398
       Atlas_5: -882045450
       Atlas_312: 261621590
