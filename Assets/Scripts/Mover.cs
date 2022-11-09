@@ -13,7 +13,6 @@ public abstract class Mover : Fighter
     boxCollider = GetComponent<BoxCollider2D>();
   }
 
-
   protected virtual void UpdateMotor(Vector3 input)
   {
     moveDelta = new Vector3(input.x * xSpeed, input.y * ySpeed);
