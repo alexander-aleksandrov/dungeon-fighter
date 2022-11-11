@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
   public Player player;
   public Weapon weapon;
   public FloatingTextManager floatingTextManager;
-
+  public int currentCharacterSpriteIndx;
   public int playerCoinsAmount;
   public int playerXpAmount;
 
@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour
   {
     var s = new StringBuilder();
 
-    s.Append("0" + "|");
+    s.Append(currentCharacterSpriteIndx.ToString() + "|");
     s.Append(playerCoinsAmount.ToString() + "|");
     s.Append(playerXpAmount.ToString() + "|");
     s.Append(weapon.weaponLevel.ToString());
@@ -74,7 +74,7 @@ public class GameManager : MonoBehaviour
       return;
     }
     string[] data = PlayerPrefs.GetString("SaveState").Split('|');
-    //skin on data[0]
+    this.player.GetComponent<SpriteRenderer>().sprite = playerSprites[int.Parse(data[0])];
     playerCoinsAmount = int.Parse(data[1]);
     playerXpAmount = int.Parse(data[2]);
     weapon.SetWeaponLevel(int.Parse(data[3]));
