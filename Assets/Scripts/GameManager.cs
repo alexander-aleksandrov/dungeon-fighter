@@ -56,6 +56,17 @@ public class GameManager : MonoBehaviour
     }
     return level;
   }
+  public int GetXPToLevelUP(int currentLevel)
+  {
+    int xpLeft = 0;
+    int level = 0;
+    while (level < currentLevel)
+    {
+      xpLeft += xpTable[level];
+      level++;
+    }
+    return xpLeft;
+  }
 
   public void ShowText(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration)
   {

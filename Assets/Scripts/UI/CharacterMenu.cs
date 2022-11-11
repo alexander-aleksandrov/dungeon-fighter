@@ -54,7 +54,10 @@ public class CharacterMenu : MonoBehaviour
   }
   public void UpdateMenu()
   {
+    int currentLevel = GameManager.instance.GetCurrentLevel();
     int weaponLevel = GameManager.instance.weapon.weaponLevel;
+
+
     weaponSprite.sprite = GameManager.instance.weaponSprites[weaponLevel];
 
     if (GameManager.instance.weapon.weaponLevel == GameManager.instance.weaponsPrices.Count)
@@ -62,11 +65,29 @@ public class CharacterMenu : MonoBehaviour
     else
       upgradeWeaponButtonText.text = GameManager.instance.weaponsPrices[weaponLevel].ToString();
 
-    coinsMenuTxt.text = GameManager.instance.playerCoinsAmount.ToString();
+    GameManager instance = GameManager.instance;
+    coinsMenuTxt.text = instance.playerCoinsAmount.ToString();
     healthMenuTxt.text = GameManager.instance.player.hitPoint.ToString();
-    levelText.text = GameManager.instance.GetCurrentLevel().ToString();
 
-    xpBarTxt.text = "Not implemented";
-    xpBar.localScale = new Vector3(0.5f, 0f, 0f);
+
+    levelText.text = currentLevel.ToString();
+
+    // xpBar
+    if (currentLevel == GameManager.instance.xpTable.Count)
+    {
+      xpBarTxt.text = GameManager.instance.playerXpAmount.ToString() + " total xp";
+      xpBar.localScale = Vector3.one;
+    }
+    else
+    {
+      int currentLevelXp = GameManager.instance.GetXPToLevelUP(currentLevel);
+      int prevLevelXp = GameManager.instance.GetXPToLevelUP(currentLevel - 1);
+      int currentXPIntoLevel = GameManager.instance.playerXpAmount - prevLevelXp;
+
+      int diff = currentLevelXp - prevLevelXp;
+      float completionRatio = (float)currentXPIntoLevel / (float)diff;
+      xpBar.localScale = new Vector3(completionRatio, 1f, 1f);
+      xpBarTxt.text = currentXPIntoLevel.ToString() + " / " + diff.ToString();
+    }
   }
 }
