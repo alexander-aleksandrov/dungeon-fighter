@@ -43,6 +43,20 @@ public class GameManager : MonoBehaviour
     return false;
   }
 
+  public int GetCurrentLevel()
+  {
+    int levelSumXp = 0;
+    int level = 0;
+    while (playerXpAmount >= levelSumXp)
+    {
+      levelSumXp += xpTable[level];
+      level++;
+      if (level == xpTable.Count)
+        return level;
+    }
+    return level;
+  }
+
   public void ShowText(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration)
   {
     floatingTextManager.Show(msg, fontSize, color, position, motion, duration);

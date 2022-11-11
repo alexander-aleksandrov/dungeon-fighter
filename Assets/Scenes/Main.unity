@@ -5105,10 +5105,11 @@ MonoBehaviour:
   - {fileID: -1797821477, guid: 884c2be27795109469ca89b01ba1f5ba, type: 3}
   - {fileID: -1801210631, guid: 884c2be27795109469ca89b01ba1f5ba, type: 3}
   weaponsPrices: 0a000000140000001e00000028000000
-  xpTable: 
+  xpTable: 050000000a0000001100000019000000230000002d00000041000000590000006400000082000000
   player: {fileID: 528850012}
   weapon: {fileID: 887050173}
   floatingTextManager: {fileID: 1941155011}
+  currentCharacterSpriteIndx: 0
   playerCoinsAmount: 0
   playerXpAmount: 0
 --- !u!4 &1581963274

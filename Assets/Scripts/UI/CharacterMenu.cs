@@ -64,7 +64,7 @@ public class CharacterMenu : MonoBehaviour
 
     coinsMenuTxt.text = GameManager.instance.playerCoinsAmount.ToString();
     healthMenuTxt.text = GameManager.instance.player.hitPoint.ToString();
-    levelText.text = "Not impleneted";
+    levelText.text = GameManager.instance.GetCurrentLevel().ToString();
 
     xpBarTxt.text = "Not implemented";
     xpBar.localScale = new Vector3(0.5f, 0f, 0f);
