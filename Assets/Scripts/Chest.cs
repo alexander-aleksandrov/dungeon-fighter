@@ -3,7 +3,7 @@ using UnityEngine;
 public class Chest : Collectable
 {
   public Sprite emptyChest;
-  public int coinsReward = 5;
+  public int coinsReward = 25;
   protected override void OnCollect()
   {
     if (collected == false)
@@ -13,8 +13,7 @@ public class Chest : Collectable
 
       string msg = "+" + coinsReward + " coins";
       GameManager.instance.ShowText(msg, 25, Color.yellow, transform.position, Vector3.up * 25, 1.5f);
-      Debug.Log("Granted coins");
-      GameManager.instance.coins += coinsReward;
+      GameManager.instance.playerCoinsAmount += coinsReward;
     }
   }
 }

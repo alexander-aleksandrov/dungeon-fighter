@@ -3,7 +3,7 @@ guid: 884c2be27795109469ca89b01ba1f5ba
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -63,6 +63,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -683,13 +684,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_33
+      name: weapon_4
       rect:
         serializedVersion: 2
-        x: 192
-        y: 224
-        width: 16
-        height: 16
+        x: 195
+        y: 225
+        width: 10
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -704,13 +705,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_34
+      name: weapon_5
       rect:
         serializedVersion: 2
-        x: 208
-        y: 224
-        width: 16
-        height: 16
+        x: 211
+        y: 225
+        width: 10
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5954,7 +5955,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_295
+      name: player_10
       rect:
         serializedVersion: 2
         x: 96
@@ -5975,7 +5976,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_296
+      name: player_8
       rect:
         serializedVersion: 2
         x: 112
@@ -5996,7 +5997,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_297
+      name: player_7
       rect:
         serializedVersion: 2
         x: 128
@@ -6017,7 +6018,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_298
+      name: player_5
       rect:
         serializedVersion: 2
         x: 144
@@ -6038,7 +6039,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_299
+      name: player_3
       rect:
         serializedVersion: 2
         x: 160
@@ -6059,7 +6060,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_300
+      name: player_2
       rect:
         serializedVersion: 2
         x: 176
@@ -6164,7 +6165,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_305
+      name: player_9
       rect:
         serializedVersion: 2
         x: 96
@@ -6185,7 +6186,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_306
+      name: player_
       rect:
         serializedVersion: 2
         x: 112
@@ -6206,7 +6207,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_307
+      name: player_6
       rect:
         serializedVersion: 2
         x: 128
@@ -6227,7 +6228,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_308
+      name: player_4
       rect:
         serializedVersion: 2
         x: 144
@@ -6391,14 +6392,12 @@ TextureImporter:
       Atlas_229: -1879657529
       Atlas_234: -476052299
       torch_0: 607944417
-      Atlas_33: -1797821477
       Atlas_205: -585552047
       Atlas_93: 70538042
       Atlas_84: 345235956
       Atlas_271: 583051712
-      Atlas_296: 2019753817
       Atlas_260: -994748732
-      Atlas_72: 63928664
+      Atlas_294: 548113347
       Atlas_148: -1628509301
       Atlas_217: -1483700158
       Atlas_261: -666266924
@@ -6412,30 +6411,30 @@ TextureImporter:
       Atlas_126: -1065026423
       Atlas_99: 1004628374
       floor_2: 355532593
+      player_2: -430486358
       Atlas_47: 1248363082
       enemy_0: 793992575
       Atlas_35: 85697479
       Atlas_219: -497639864
+      Atlas_154: -645973837
       wallPipe_: -427669293
-      Atlas_89: 254154756
       rightWall_1: 789264675
+      Atlas_89: 254154756
       Atlas_222: -1855292756
       Atlas_304: -1118017034
       Atlas_233: -1865381874
-      leftWall_3: 915147788
       Atlas_36: -1808795376
+      leftWall_3: 915147788
       weapon_0: 1999387000
       Atlas_254: 1767614272
       Atlas_198: 1006126961
-      Atlas_307: -1734277268
-      Atlas_154: -645973837
-      Atlas_225: -1160799557
       Atlas_45: 1751224183
-      Atlas_106: 247958379
+      Atlas_225: -1160799557
       chest_3: -1626405530
+      weapon_1: -776868543
+      Atlas_106: 247958379
       Atlas_187: -331036164
       Atlas_192: 1123668534
-      weapon_1: -776868543
       HealingFountain_2: 87047003
       Atlas_210: 128473538
       Atlas_98: 1882620881
@@ -6445,7 +6444,6 @@ TextureImporter:
       Atlas_13: -1271697905
       Atlas_112: 90972019
       Atlas_267: -41024840
-      Atlas_306: 1630823434
       Atlas_92: -2118110339
       Atlas_180: 28757921
       stairs_2: 1539403821
@@ -6459,6 +6457,7 @@ TextureImporter:
       crate_1: -425894556
       Atlas_156: -2037023001
       Atlas_44: 422417601
+      player_7: 1742171791
       Atlas_164: 1080348704
       chest_2: 974352042
       Atlas_113: 1358120476
@@ -6481,7 +6480,6 @@ TextureImporter:
       wall_5: 2094314043
       player_0: 1050193099
       Atlas_284: 2083080642
-      Atlas_297: 1742171791
       torch_2: 366393602
       Atlas_248: 2024330759
       Atlas_127: 1663170521
@@ -6504,10 +6502,13 @@ TextureImporter:
       Atlas_208: 754985210
       Atlas_71: -257373960
       Atlas_302: 244449661
+      player_4: 1386681037
       wall_6: 1991074164
+      player_5: 1731294440
       Atlas_223: -616823446
       Atlas_203: -186322918
       Atlas_178: -805440396
+      player_9: 256854495
       Atlas_202: 1650757622
       Atlas_118: -208729128
       Atlas_166: -175079081
@@ -6515,14 +6516,13 @@ TextureImporter:
       Atlas_43: -1285185693
       wall_4: -320687355
       rightcorner_0: -107516648
+      weapon_4: -1797821477
       Atlas_311: 1568212314
       Atlas_171: 1881330958
-      Atlas_308: 1386681037
       Atlas_256: 655946191
       Atlas_313: 458249016
       Atlas_181: 169392660
       Atlas_269: -85732475
-      Atlas_305: 256854495
       Atlas_28: -17022042
       Atlas_136: 1246424059
       Atlas_266: 1969006937
@@ -6530,18 +6530,16 @@ TextureImporter:
       Atlas_17: 1886058410
       Atlas_151: 1569322870
       Atlas_301: -1411982414
-      Atlas_300: -430486358
+      Atlas_230: -470299236
       Atlas_183: -467556598
       chest_0: 154355004
       Atlas_138: -1954914065
       Atlas_61: 2000563601
-      Atlas_230: -470299236
       Atlas_59: 1039376104
       Atlas_97: 1745265862
       Atlas_191: 2063491773
       Atlas_226: 444434879
       Atlas_24: 106004662
-      Atlas_298: 1731294440
       Atlas_88: -215660761
       wall_3: 2088475398
       Atlas_218: 1085432196
@@ -6558,6 +6556,7 @@ TextureImporter:
       Atlas_75: 1116908684
       wallPipe_2: -648953477
       Atlas_58: 76511205
+      weapon_5: -1801210631
       Atlas_56: 991672412
       Atlas_134: 1826136317
       Atlas_157: -1161707145
@@ -6571,6 +6570,7 @@ TextureImporter:
       floor_0: -1360489710
       Atlas_55: -1369214183
       leftcorner_0: 1280303632
+      player_8: 2019753817
       Atlas_188: 2051703872
       Atlas_216: -2012524308
       Atlas_272: -1367980468
@@ -6612,7 +6612,6 @@ TextureImporter:
       floor_9: 94580806
       Atlas_155: 1274564717
       Atlas_247: -232057545
-      Atlas_295: -967478306
       Atlas_249: -913813455
       Atlas_70: 1129395745
       Atlas_6: -293741081
@@ -6633,8 +6632,10 @@ TextureImporter:
       Atlas_209: -498956588
       Atlas_253: -424753500
       wall_0: -101541563
+      player_3: -697463980
       Atlas_107: -624107808
       Atlas_124: -1237581785
+      player_6: -1734277268
       torch_3: 545438759
       crate_3: 20481103
       wall_8: 724159932
@@ -6642,12 +6643,12 @@ TextureImporter:
       Atlas_125: 154675041
       Atlas_186: -1890898422
       Atlas_130: 469497946
-      Atlas_34: -1801210631
+      Atlas_177: 675648298
       Atlas_85: -337856828
       Atlas_163: 1227720328
-      Atlas_177: 675648298
-      Atlas_280: -1797876031
       Atlas_185: -468587331
+      Atlas_280: -1797876031
+      player_: 1630823434
       torch_5: -511078222
       Atlas_160: -1248070813
       Atlas_120: 1005372949
@@ -6681,6 +6682,7 @@ TextureImporter:
       Atlas_197: -747631305
       Atlas_246: -948097225
       wallPipe_1: -1470636781
+      player_10: -967478306
       Atlas_152: -1799291804
       torch_8: -909946898
       Atlas_212: 737776597
@@ -6689,16 +6691,15 @@ TextureImporter:
       Atlas_57: -1169713013
       Atlas_227: 125745765
       Atlas_189: -1977846164
-      Atlas_299: -697463980
+      Atlas_139: 1454831045
       Atlas_175: -869674029
       Atlas_221: -273756873
       Atlas_278: 2023667313
       Atlas_9: 1319757648
-      Atlas_139: 1454831045
       HealingFountain_0: 534225744
-      Atlas_29: -1427444634
       Atlas_179: -1650384953
-      Atlas_294: 548113347
+      Atlas_29: -1427444634
+      Atlas_72: 63928664
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

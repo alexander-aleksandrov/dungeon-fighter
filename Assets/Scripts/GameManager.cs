@@ -23,24 +23,46 @@ public class GameManager : MonoBehaviour
   public List<int> xpTable;
 
   public Player player;
+  public Weapon weapon;
   public FloatingTextManager floatingTextManager;
 
-  public int coins;
-  public int experience;
+  public int playerCoinsAmount;
+  public int playerXpAmount;
+
+  public bool TryUpgradeWeapon()
+  {
+    if (weaponsPrices.Count <= weapon.weaponLevel)
+      return false;
+
+    if (playerCoinsAmount >= weaponsPrices[weapon.weaponLevel])
+    {
+      playerCoinsAmount -= weaponsPrices[weapon.weaponLevel];
+      weapon.UpgradeWeapon();
+      return true;
+    }
+    return false;
+  }
 
   public void ShowText(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration)
   {
     floatingTextManager.Show(msg, fontSize, color, position, motion, duration);
   }
 
+  //Save state
+  /*
+   * int preferedPlayerSkin
+   * int playerCoinsAmount
+   * int playerXpAmount
+   * int weaponLevel
+   */
   public void SaveState()
   {
     var s = new StringBuilder();
 
     s.Append("0" + "|");
-    s.Append(coins.ToString() + "|");
-    s.Append(experience.ToString() + "|");
-    s.Append("0");
+    s.Append(playerCoinsAmount.ToString() + "|");
+    s.Append(playerXpAmount.ToString() + "|");
+    s.Append(weapon.weaponLevel.ToString());
 
     PlayerPrefs.SetString("SaveState", s.ToString());
     Debug.Log("State Saved");
@@ -53,9 +75,9 @@ public class GameManager : MonoBehaviour
     }
     string[] data = PlayerPrefs.GetString("SaveState").Split('|');
     //skin on data[0]
-    coins = int.Parse(data[1]);
-    experience = int.Parse(data[2]);
-    //weapon level
+    playerCoinsAmount = int.Parse(data[1]);
+    playerXpAmount = int.Parse(data[2]);
+    weapon.SetWeaponLevel(int.Parse(data[3]));
 
     Debug.Log("State Loaded");
   }
