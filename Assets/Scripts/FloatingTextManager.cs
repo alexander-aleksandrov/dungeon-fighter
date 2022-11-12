@@ -6,10 +6,6 @@ public class FloatingTextManager : MonoBehaviour
 {
   public GameObject textContainer;
   public GameObject textPrefab;
-  private void Start()
-  {
-    DontDestroyOnLoad(gameObject);
-  }
   private void Update()
   {
     foreach (FloatingText txt in floatingTexts)

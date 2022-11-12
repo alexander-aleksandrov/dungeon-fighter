@@ -8,7 +8,11 @@ public class Player : Mover
   {
     base.Start();
     _spriteRenderer = GetComponent<SpriteRenderer>();
-    DontDestroyOnLoad(gameObject);
+  }
+  protected override void ReceiveDamage(Damage dmg)
+  {
+    base.ReceiveDamage(dmg);
+    GameManager.instance.OnHitPointChange();
   }
   public void SwapSprite(int currentCarachterSelection)
   {
@@ -44,5 +48,6 @@ public class Player : Mover
     hitPoint += healingAmountPerSec;
 
     GameManager.instance.ShowText("+" + healingAmountPerSec.ToString() + "Hp", 25, Color.green, transform.position, Vector3.up * 30, 1.0f);
+    GameManager.instance.OnHitPointChange();
   }
 }

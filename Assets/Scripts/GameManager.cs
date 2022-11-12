@@ -13,11 +13,13 @@ public class GameManager : MonoBehaviour
       Destroy(gameObject);
       Destroy(player.gameObject);
       Destroy(floatingTextManager.gameObject);
+      Destroy(hud.gameObject);
+      Destroy(menu.gameObject);
       return;
     }
     instance = this;
     SceneManager.sceneLoaded += LoadState;
-    DontDestroyOnLoad(gameObject);
+    SceneManager.sceneLoaded += OnsceneLoaded;
   }
   public List<Sprite> playerSprites;
   public List<Sprite> weaponSprites;
@@ -27,6 +29,10 @@ public class GameManager : MonoBehaviour
   public Player player;
   public Weapon weapon;
   public FloatingTextManager floatingTextManager;
+  public RectTransform hitPointBar;
+  public GameObject hud;
+  public GameObject menu;
+
   public int currentCharacterSpriteIndx;
   public int playerCoinsAmount;
   public int playerXpAmount;
@@ -43,6 +49,13 @@ public class GameManager : MonoBehaviour
       return true;
     }
     return false;
+  }
+
+  //Hit point Bar
+  public void OnHitPointChange()
+  {
+    float ratio = (float)player.hitPoint / (float)player.maxHitpoint;
+    hitPointBar.localScale = new Vector3(1f, ratio, 1f);
   }
 
   //Xp system
@@ -83,12 +96,19 @@ public class GameManager : MonoBehaviour
   private void OnLevelUp()
   {
     player.OnLevelUp();
+    OnHitPointChange();
   }
 
   //Floating text
   public void ShowText(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration)
   {
     floatingTextManager.Show(msg, fontSize, color, position, motion, duration);
+  }
+
+  //On scene loaded 
+  public void OnsceneLoaded(Scene scene, LoadSceneMode mode)
+  {
+    player.transform.position = GameObject.Find("SpawnPoint").transform.position;
   }
 
   //Save state
@@ -112,10 +132,13 @@ public class GameManager : MonoBehaviour
   }
   public void LoadState(Scene scene, LoadSceneMode mode)
   {
+    SceneManager.sceneLoaded -= LoadState;
     if (!PlayerPrefs.HasKey("SaveState"))
     {
       return;
     }
+
+
     string[] data = PlayerPrefs.GetString("SaveState").Split('|');
     this.player.GetComponent<SpriteRenderer>().sprite = playerSprites[int.Parse(data[0])];
     playerCoinsAmount = int.Parse(data[1]);
@@ -125,7 +148,5 @@ public class GameManager : MonoBehaviour
       player.SetLevel(GetCurrentLevel());
     }
     weapon.SetWeaponLevel(int.Parse(data[3]));
-    player.transform.position = GameObject.Find("SpawnPoint").transform.position;
-
   }
 }
