@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 99
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -6421,19 +6421,19 @@ TextureImporter:
       rightWall_1: 789264675
       Atlas_89: 254154756
       Atlas_222: -1855292756
-      Atlas_304: -1118017034
       Atlas_233: -1865381874
-      Atlas_36: -1808795376
       leftWall_3: 915147788
+      Atlas_36: -1808795376
       weapon_0: 1999387000
       Atlas_254: 1767614272
       Atlas_198: 1006126961
+      Atlas_304: -1118017034
       Atlas_45: 1751224183
       Atlas_225: -1160799557
       chest_3: -1626405530
-      weapon_1: -776868543
       Atlas_106: 247958379
       Atlas_187: -331036164
+      weapon_1: -776868543
       Atlas_192: 1123668534
       HealingFountain_2: 87047003
       Atlas_210: 128473538

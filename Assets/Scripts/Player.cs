@@ -8,6 +8,7 @@ public class Player : Mover
   {
     base.Start();
     _spriteRenderer = GetComponent<SpriteRenderer>();
+    DontDestroyOnLoad(gameObject);
   }
   public void SwapSprite(int currentCarachterSelection)
   {
@@ -33,5 +34,15 @@ public class Player : Mover
     {
       OnLevelUp();
     }
+  }
+
+  public void Heal(int healingAmountPerSec)
+  {
+    if (hitPoint == maxHitpoint)
+      return;
+
+    hitPoint += healingAmountPerSec;
+
+    GameManager.instance.ShowText("+" + healingAmountPerSec.ToString() + "Hp", 25, Color.green, transform.position, Vector3.up * 30, 1.0f);
   }
 }

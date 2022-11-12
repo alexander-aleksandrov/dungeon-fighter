@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     if (GameManager.instance != null)
     {
       Destroy(gameObject);
+      Destroy(player.gameObject);
+      Destroy(floatingTextManager.gameObject);
       return;
     }
     instance = this;
@@ -123,7 +125,7 @@ public class GameManager : MonoBehaviour
       player.SetLevel(GetCurrentLevel());
     }
     weapon.SetWeaponLevel(int.Parse(data[3]));
+    player.transform.position = GameObject.Find("SpawnPoint").transform.position;
 
-    Debug.Log("State Loaded");
   }
 }
