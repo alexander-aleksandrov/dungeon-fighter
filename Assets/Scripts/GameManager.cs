@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
   public RectTransform hitPointBar;
   public GameObject hud;
   public GameObject menu;
-
+  public Animator deathMenuAnimator;
   public int currentCharacterSpriteIndx;
   public int playerCoinsAmount;
   public int playerXpAmount;
@@ -97,6 +97,14 @@ public class GameManager : MonoBehaviour
   {
     player.OnLevelUp();
     OnHitPointChange();
+  }
+
+  //Death menu
+  public void Respawn()
+  {
+    deathMenuAnimator.SetTrigger("hide");
+    SceneManager.LoadScene("Main");
+    player.Respawn();
   }
 
   //Floating text

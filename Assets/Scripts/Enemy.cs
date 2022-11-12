@@ -26,6 +26,8 @@ public class Enemy : Mover
 
   private void FixedUpdate()
   {
+    if (!GameManager.instance.player.isAlive)
+      return;
     if (Vector3.Distance(playerTransform.position, startingPosition) < chaseLength)
     {
       if (Vector3.Distance(playerTransform.position, startingPosition) < triggerLength)
