@@ -4422,7 +4422,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_214
+      name: enemy_2
       rect:
         serializedVersion: 2
         x: 0
@@ -4464,7 +4464,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_216
+      name: enemy_3
       rect:
         serializedVersion: 2
         x: 32
@@ -5094,48 +5094,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_254
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ef7e55dacbf8dad48a37a7972b9c22e7
-      internalID: 1767614272
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Atlas_255
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3731340f75b689541a8dc1e12248ad69
-      internalID: -1343547505
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Atlas_256
       rect:
         serializedVersion: 2
@@ -5430,48 +5388,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_270
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ff8e163b84c9a69448b7c45a44fb600e
-      internalID: 440490363
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Atlas_271
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0450e4ef2089cf04183bcf82f5983774
-      internalID: 583051712
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Atlas_272
       rect:
         serializedVersion: 2
@@ -5598,7 +5514,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_278
+      name: enemy_1
       rect:
         serializedVersion: 2
         x: 32
@@ -6374,6 +6290,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: boss_0
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 48
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 138f8de98d570de4aaaa02cf4bde3a9e
+      internalID: 544276091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -6437,6 +6374,7 @@ TextureImporter:
       Atlas_192: 1123668534
       HealingFountain_2: 87047003
       Atlas_210: 128473538
+      enemy_1: 2023667313
       Atlas_98: 1882620881
       wallBreak_1: 1663497260
       Atlas_63: -1812146439
@@ -6463,6 +6401,7 @@ TextureImporter:
       Atlas_113: 1358120476
       Atlas_15: 633534337
       Atlas_199: -886668954
+      enemy_3: -2012524308
       Atlas_110: -1667191885
       floor_7: 764412870
       wall_1: -493197035
@@ -6490,6 +6429,7 @@ TextureImporter:
       Atlas_232: 798406057
       Atlas_149: 1659316476
       Atlas_10: 853696144
+      boss_0: 544276091
       Atlas_162: 2060356239
       Atlas_211: 983809327
       torch_1: 142587573
@@ -6572,7 +6512,6 @@ TextureImporter:
       leftcorner_0: 1280303632
       player_8: 2019753817
       Atlas_188: 2051703872
-      Atlas_216: -2012524308
       Atlas_272: -1367980468
       Atlas_281: 40698941
       weapon_3: -1528875407
@@ -6620,7 +6559,6 @@ TextureImporter:
       stairs_1: -2133656426
       Atlas_165: -1739166976
       Atlas_132: 451428956
-      Atlas_214: 732620649
       Atlas_81: 1412733796
       Atlas_252: -761005328
       floor_5: 1113205509
@@ -6662,6 +6600,7 @@ TextureImporter:
       Atlas_41: 1382163903
       Atlas_207: -1964554282
       Atlas_8: 146598973
+      enemy_2: 732620649
       Atlas_14: -571848810
       Atlas_286: -362986586
       Atlas_277: 848463415
@@ -6694,10 +6633,9 @@ TextureImporter:
       Atlas_139: 1454831045
       Atlas_175: -869674029
       Atlas_221: -273756873
-      Atlas_278: 2023667313
       Atlas_9: 1319757648
-      HealingFountain_0: 534225744
       Atlas_179: -1650384953
+      HealingFountain_0: 534225744
       Atlas_29: -1427444634
       Atlas_72: 63928664
   spritePackingTag: 
