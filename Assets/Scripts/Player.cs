@@ -20,4 +20,18 @@ public class Player : Mover
     float y = Input.GetAxisRaw("Vertical");
     UpdateMotor(new Vector3(x, y));
   }
+
+  public void OnLevelUp()
+  {
+    maxHitpoint++;
+    hitPoint = maxHitpoint;
+  }
+
+  public void SetLevel(int level)
+  {
+    for (int i = 0; i < level; i++)
+    {
+      OnLevelUp();
+    }
+  }
 }

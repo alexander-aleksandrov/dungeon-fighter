@@ -43,6 +43,7 @@ public class GameManager : MonoBehaviour
     return false;
   }
 
+  //Xp system
   public int GetCurrentLevel()
   {
     int levelSumXp = 0;
@@ -67,7 +68,22 @@ public class GameManager : MonoBehaviour
     }
     return xpLeft;
   }
+  public void GrantXP(int xp)
+  {
+    int currentLevel = GetCurrentLevel();
+    playerXpAmount += xp;
+    if (currentLevel < GetCurrentLevel())
+    {
+      OnLevelUp();
+    }
+  }
 
+  private void OnLevelUp()
+  {
+    player.OnLevelUp();
+  }
+
+  //Floating text
   public void ShowText(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration)
   {
     floatingTextManager.Show(msg, fontSize, color, position, motion, duration);
@@ -102,6 +118,10 @@ public class GameManager : MonoBehaviour
     this.player.GetComponent<SpriteRenderer>().sprite = playerSprites[int.Parse(data[0])];
     playerCoinsAmount = int.Parse(data[1]);
     playerXpAmount = int.Parse(data[2]);
+    if (GetCurrentLevel() != 1)
+    {
+      player.SetLevel(GetCurrentLevel());
+    }
     weapon.SetWeaponLevel(int.Parse(data[3]));
 
     Debug.Log("State Loaded");
